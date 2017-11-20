@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/build/AllStyles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="row header">
+            <div class="col-2 full-height">
+                <img class="logo left" src="./assets/images/logo-ru.png" />
+            </div>
+            <div class="col-5 full-height">
+                <div class="project left">
+                    <p>Barselona Design</p>
+                    <img src="./assets/images/down-arrow.png" />
+                </div>
+            </div>
+            <div class="col-5 full-height">
+                <div class="profile right">
+                    <img src="./assets/images/profile-img.png" />
+                    <p class="">Petr_Osmanov</p>
+                    <img src="./assets/images/down-arrow.png" />
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="row">
+            <!-- CONTENT-LEFT -->
+            <div class="col-2">
+                <div class="first-line"> 
+                    <a class="button" href="#"> ДОБАВИТЬ ЗАДАЧУ
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="info second-line">
+                        СВОДНАЯ
+                        <br /> ИНФОРМАЦИЯ
+                    </div>
+                    <hr />
+                    <div class="arrow-block">
+                        <h4>Все задачи</h4>
+                        <ul>
+                            <li>
+                                <a href="">Открытые</a>
+                            </li>
+                            <li>
+                                <a href="">Выполненные</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <a class="reports" href="">
+                        Отчеты
+                    </a>
+                </div>
+            </div>
+            <!-- CONTENT-RIGHT -->
+            <div class="col-10">
+                <div class="row">
+                    <div class="head left">
+                        <div class="head-img">
+                            <img alt="img" src="./assets/images/head-img.png" />
+                        </div>
+                        <span>
+                            <h1>Barselona Design</h1>
+                            <img src="./assets/images/down-arrow.png" />
+                        </span>
+                    </div>
+                </div>
+                <div class="open-tasks">
+                    <div class="row vertical-centered second-line">
+                        <div class="show">
+                            <h2>Открытые задачи
+                                <span>327</span>
+                            </h2>
+                        </div>
+                        <div class="add">
+                            <a href=""><img alt="add" src="./assets/images/add.png"/> Добавить задачу</a>
+                        </div>
+                    </div>
+                    <hr class="full-width-hr"/>
+                    <div class="row filters">
+                        <form id="filter-form">
+                            <select id="data-selector" name="date" class="data-selector left">
+                                <option value="-1" selected>Все периоды</option>
+                                <option value="12.15">Декабрь, 2015</option>
+                                <option value="1.16">Январь, 2016</option>
+                                <option value="2.16">Февраль, 2016</option>
+                                <option value="3.16">Март, 2016</option>
+                            </select>
+
+                            <select id="task-type-selector" name="task-type" class="task-type-selector left">
+                                <option value="-1" selected>Все задачи</option>
+                                <option value="open">Открытые задачи</option>
+                                <option value="complete">Выполненные задачи</option>
+                            </select>
+
+                            <input id="search-filter" class="search right" name="search" type="text" placeholder="Поиск задач по проекту"/>
+                        </form>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <table id="task-table">
+                            <tr>
+                                <th class="c1">Т</th>
+                                <th class="c2">Тикет</th>
+                                <th class="c3">Название</th>
+                                <th class="c4">П</th>
+                                <th class="c5">Статус</th>
+                                <th class="c6">Решение</th>
+                                <th class="c7">Создано</th>
+                                <th class="c8">Обновлено</th>
+                                <th class="c9">Дедлайн</th>
+                                <th class="c10"></th>
+                            </tr>
+                            <tr>
+                                <td><img src="../assets/images/t-1.png"</td>
+                                <td>0001</td>
+                                <td class="cl3">Вывести счетчик компаний и договоров.</td>
+                                <td class="cl4 red">•</td>
+                                <td>Открыто</td>
+                                <td>Не решено</td>
+                                <td>23.12.15</td>
+                                <td>27.12.15</td>
+                                <td>31.12.15</td>
+                                <td class="cl10"><a href="">...</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../assets/images/t-2.png"</td>
+                                <td>0002</td>
+                                <td class="cl3">Оптимизировать Kaod getProducts.</td>
+                                <td class="cl4 green">•</td>
+                                <td>Открыто</td>
+                                <td>Не решено</td>
+                                <td>17.12.15</td>
+                                <td>22.12.15</td>
+                                <td>7.01.16</td>
+                                <td class="cl10"><a href="">...</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../assets/images/t-3.png"</td>
+                                <td>0003</td>
+                                <td class="cl3">Вывести счетчик компаний и договоров.</td>
+                                <td class="cl4 green">•</td>
+                                <td>Открыто</td>
+                                <td>Не решено</td>
+                                <td>1.12.15</td>
+                                <td>—</td>
+                                <td>15.02.16</td>
+                                <td class="cl10"><a href="">...</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../assets/images/t-4.png"</td>
+                                <td>0004</td>
+                                <td class="cl3">Оптимизировать Kaod getProducts.</td>
+                                <td class="cl4 gray">•</td>
+                                <td>Открыто</td>
+                                <td>Не решено</td>
+                                <td>29.11.15</td>
+                                <td>15.12.15</td>
+                                <td>25.12.15</td>
+                                <td class="cl10"><a href="">...</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row navigation">
+                        <div id="pagination" class="pagination">
+                            <a class="active" pageNum="1" href="">1</a>
+                            <a pageNum="2" href="">2</a>
+                            <a pageNum="3" href="">3</a>
+                            <a pageNum="4" href="">4</a>
+                            <a pageNum="5" href="">5</a>
+                            <a pageNum="+" href="">...</a>
+                            <a pageNum="32" href="">32</a>
+                        </div>
+                        <div id="quantity" class="quantity">
+                            <p>
+                                Количество задач:
+                            </p>
+                            <a value="5" class="active" href="">5</a>
+                            <a value="20" href="">20</a>
+                            <a value="50" href="">50</a>
+                            <a value="100" href="">100</a>
+                            <a value="-1" href="">все</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="row footer">
+            <div class="col-10 right">
+                <div class="row">
+                    <div class="banner left colored">
+                        <h1>ВОЗНИКЛИ ВОПРОСЫ?</h1>
+                        <h2>ВОСПОЛЬЗУЙТЕСЬ ФОРМОЙ
+                            <br />ОТПРАВКИ ЗАЯВКИ И МЫ СВЯЖЕМСЯ
+                            <br /> С ВАМИ</h2>
+                        <a class="send" href="">
+                            ОСТАВИТЬ ЗАЯВКУ
+                        </a>
+                    </div>
+                    <div class="banner right white">
+                        <h1>ИЛИ СВЯЖИТЕСЬ С НАМИ НАПРЯМУЮ:</h1>
+                        <h2>Г. МОСКВА УЛ. ВИКТОРЕНКО Д. 11
+                            <br />+7 (499) 502-81-39</h2>
+                        <a class="email" href="">ORDER@TRENDSOFT.RU</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-2 full-height"></div>
+                <div class="col-3 full-height copy-text">
+                    <p>© ООО «Трендсофт», 2011-2015</p>
+                </div>
+                <div class="col-2 full-height phone">
+                    <p>+7 (499) 502-81-39</p>
+                </div>
+                <div class="col-5 right full-height social">
+                    <a href="">
+                        <img src="./assets/images/fb.png" />
+                    </a>
+                    <a href="">
+                        <img src="./assets/images/vk.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/build/App.js"></script>
+</body>
+
+</html>

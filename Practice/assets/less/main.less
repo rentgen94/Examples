@@ -1,0 +1,119 @@
+@import "./constants.less";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+
+body, html {
+    #text;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 @container-margin;
+    background-color: @container-bg-color;
+}
+
+.row {
+     margin-left: -@container-margin;
+     margin-right: -@container-margin;
+     padding: 0 10px;
+}
+
+.row .row {
+    margin: 0;
+    padding: 0;
+}
+
+.row:after, .row:before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    width: @col-width;
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-2 {
+    width: @col-width + (@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-3 {
+    width: @col-width + 2*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-4 {
+    width: @col-width + 3*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-5 {
+    width: @col-width + 4*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-6 {
+    width: @col-width + 5*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-7 {
+    width: @col-width + 6*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-8 {
+    width: @col-width + 7*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-9 {
+    width: @col-width + 8*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-10 {
+    width: @col-width + 9*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-11 {
+    width: @col-width + 10*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+.col-12 {
+    width: @col-width + 11*(@col-width + 2*@col-padding);
+    float: left;
+    padding: 0 @col-padding;
+}
+
+.left {
+    float:left!important;
+}
+
+.right {
+    float: right!important;
+}
+
+.full-height {
+    height: 100%!important;
+}
+
+hr {
+    margin: 0;
+    border-color: @theme-color-3;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import "./header.less";
+@import "./content-left.less";
+@import "./content-right.less";
+@import "./footer.less";
